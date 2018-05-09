@@ -1,11 +1,13 @@
 ﻿  Source.cpp
-G:\work\DFD_convoy\project\similarity_disk\similarity_disk\DFD.h(16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 G:\work\DFD_convoy\project\similarity_disk\similarity_disk\DFD.h(17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-G:\work\DFD_convoy\project\similarity_disk\similarity_disk\DFD.h(40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\work\DFD_convoy\project\similarity_disk\similarity_disk\DFD.h(18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 G:\work\DFD_convoy\project\similarity_disk\similarity_disk\DFD.h(41): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\work\DFD_convoy\project\similarity_disk\similarity_disk\DFD.h(42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\work\DFD_convoy\project\similarity_disk\similarity_disk\DFD.h(69): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\work\DFD_convoy\project\similarity_disk\similarity_disk\DFD.h(70): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Generating code
-  3 of 146 functions ( 2.1%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  50 of 161 functions (31.1%) were compiled, the rest were copied from previous compilation.
+    39 functions were new in current compilation
+    27 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   similarity_disk.vcxproj -> G:\work\DFD_convoy\project\similarity_disk\x64\Release\similarity_disk.exe

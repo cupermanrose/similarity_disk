@@ -10,8 +10,13 @@
 
 using namespace std;
 
+struct Cell {
+	Point First, last;
+};
+
 long long DataTPos[DataSize];
 long long QueryTPos[QuerySize];
+Cell CellPoint[DataSize];
 
 void Init_DataPos(string filename) {
 	FILE* fDataPos = fopen(filename.c_str(), "rb");
@@ -44,13 +49,27 @@ void Init_Trajectory(Trajectory& A, FILE* fin, long long Pos) {
 	_fseeki64(fin, Pos, SEEK_SET);
 	long long TraLen;
 	fread(&TraLen, sizeof(long long), 1, fin);
-	//fread(&(A.Points), sizeof(Point), TraLen, fin);
-	for (int i = 0; i < TraLen; i++) {
+
+	vector<Point> TempPoints(TraLen);
+	fread(&TempPoints[0], sizeof(Point), TraLen, fin);
+	A.Points = TempPoints;
+	/*for (int i = 0; i < TraLen; i++) {
 		Point TempP;
 		fread(&(TempP.lat), sizeof(double), 1, fin);
 		fread(&(TempP.lon), sizeof(double), 1, fin);
 		A.Points.push_back(TempP);
+	}*/
+}
+
+void Init_CellPoint() {
+	FILE* fData = fopen(DataFile.c_str(), "rb");
+	for (int i = 0; i < DataSize; i++) {
+		Trajectory Tra;
+		Init_Trajectory(Tra, fData, DataTPos[i]);
+		CellPoint[i].First = Tra.Points[0];
+		CellPoint[i].last = Tra.Points[Tra.Points.size() - 1];
 	}
+	fclose(fData);
 }
 
 #endif // !_INIT_H

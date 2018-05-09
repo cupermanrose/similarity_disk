@@ -17,11 +17,11 @@ void Search_baseline() {
 	for (int i = 0; i < QuerySize; i++) {
 		Init_Trajectory(QTra, fQuery, QueryTPos[i]);
 		for (int j = 0; j < DataSize; j++) {
+			if (LB_cell(QTra.Points, CellPoint[j]) > epsilon) continue;
 			Init_Trajectory(DTra, fData, DataTPos[j]);
-			if (LB_cell(QTra.Points, DTra.Points) > epsilon) continue;
 			lbcell++;
-			//if (DFD_LBrow(QTra.Points, DTra.Points) < epsilon) ans++;
-			if (double_DFD(QTra.Points, DTra.Points) < epsilon) ans++;
+			if (DFD_LBrow(QTra.Points, DTra.Points) < epsilon) ans++;
+			//if (BoolDFD_LBrow(QTra.Points, DTra.Points)) ans++;
 		}
 	}
 	cout << lbcell << endl;

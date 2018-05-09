@@ -6,9 +6,9 @@
 using namespace std;
 
 const int MaxLen = 20000;
-const int DataSize = 100;
+const int DataSize = 10000;
 const int QuerySize = 100;
-const double epsilon = 0.05*0.05;
+const double epsilon = 0.01*0.01;
 
 string DataFile = "G:\\work\\DFD_convoy\\dataset\\Geolife_Trajectories_1.3\\AllTra.txt";
 string DataPosFile = "G:\\work\\DFD_convoy\\dataset\\Geolife_Trajectories_1.3\\AllTraPos.txt";

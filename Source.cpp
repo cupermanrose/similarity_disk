@@ -14,6 +14,7 @@ int main() {
 	init_time();
 	Init_DataPos(DataPosFile);
 	Init_QueryPos(QueryPosFile);
+	Init_CellPoint();
 	out_time("Init: ");
 	init_time();
 	Search_baseline();
