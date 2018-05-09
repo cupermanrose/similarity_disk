@@ -1,0 +1,7 @@
+﻿  Source.cpp
+g:\work\dfd_convoy\project\similarity_disk\similarity_disk\dfd.h(17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+g:\work\dfd_convoy\project\similarity_disk\similarity_disk\dfd.h(18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+g:\work\dfd_convoy\project\similarity_disk\similarity_disk\dfd.h(41): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+g:\work\dfd_convoy\project\similarity_disk\similarity_disk\dfd.h(42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  similarity_disk.vcxproj -> G:\work\DFD_convoy\project\similarity_disk\x64\Debug\similarity_disk.exe
+  similarity_disk.vcxproj -> G:\work\DFD_convoy\project\similarity_disk\x64\Debug\similarity_disk.pdb (Partial PDB)
