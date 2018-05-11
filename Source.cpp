@@ -16,8 +16,24 @@ int main() {
 	Init_QueryPos(QueryPosFile);
 	Init_CellPoint();
 	out_time("Init: ");
+
 	init_time();
+	grouping::Init();
+	out_time("grouping Init ");
+
+	/*init_time();
 	Search_baseline();
-	out_time("baseline: ");
+	out_time("baseline ");*/
+
+	init_time();
+	Search_New();
+	out_time("New ");
+
+	init_time();
+	Search_baselineG();
+	out_time("baselineG ");
+
+	
+
 	system("pause");
 }

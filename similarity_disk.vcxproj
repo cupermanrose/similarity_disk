@@ -121,6 +121,7 @@
     <ClInclude Include="DFD.h" />
     <ClInclude Include="dist.h" />
     <ClInclude Include="Element.h" />
+    <ClInclude Include="grouping.h" />
     <ClInclude Include="init.h" />
     <ClInclude Include="mytime.h" />
     <ClInclude Include="parameter.h" />
